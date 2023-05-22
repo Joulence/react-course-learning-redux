@@ -1,7 +1,11 @@
+import { useSelector } from 'react-redux';
+
 import classes from './Counter.module.css';
 
 const Counter = () => {
-  const toggleCounterHandler = () => {};
+  const counter = useSelector(state => state.counter);
+
+  const toggleCounterHandler = () => { };
 
   return (
     <main className={classes.counter}>
