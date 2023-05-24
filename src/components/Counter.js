@@ -12,7 +12,7 @@ const Counter = () => {
   const increaseAmount = 10;
 
   const incrementHandler = () => {
-    dispatch(counterActions.increment);
+    dispatch(counterActions.increment());
   };
 
   const increaseHandler = () => {
@@ -20,11 +20,11 @@ const Counter = () => {
   };
 
   const decrementHandler = () => {
-    dispatch(counterActions.decrement);
+    dispatch(counterActions.decrement());
   };
 
   const toggleCounterHandler = () => {
-    dispatch(counterActions.toggleCounter);
+    dispatch(counterActions.toggleCounter());
   };
 
   return (
